@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--    <link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"/>-->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            <div><h2>Save data</h2></div>
+
+            <div>
+                <form>
+
+                    <div class="form-group">
+                        <label for="exampleInputvariable">variable name</label>
+                        <input type="text" class="form-control" id="exampleInputvariable" aria-describedby="exampleInputvarialbehelps" placeholder="V_name">
+                        <small id="exampleInputvarialbehelps" class="form-text text-muted">type variable name .</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputKinyarwanda">Kinyarwanda</label>
+                        <input type="text" class="form-control" id="exampleInputKinyarwanda" aria-describedby="KinyarwandaHelp" placeholder="in Kinyarwanda">
+                        <small id="KinyarwandaHelp" class="form-text text-muted">type variable meaning in French</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEnglish">English</label>
+                        <input type="text" class="form-control" id="exampleInputEnglish" aria-describedby="EnglishHelp" placeholder="in English">
+                        <small id="EnglishHelp" class="form-text text-muted">type variable meaning in english</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFrench">French</label>
+                        <input type="text" class="form-control" id="exampleInputFrench" aria-describedby="FrenchHelp" placeholder="in French">
+                        <small id="FrenchHelp" class="form-text text-muted">type variable meaning in French</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputKiswahili">Kiswahili</label>
+                        <input type="text" class="form-control" id="exampleInputKiswahili" aria-describedby="KiswahiliHelp" placeholder="in French">
+                        <small id="KiswahiliHelp" class="form-text text-muted">type variable meaning in Kiswahili</small>
+                    </div>
+
+                    <button id="putData" type="button" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div><h2>get data</h2></div>
+
+            <div>
+                <form>
+
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <label class="mr-sm-2" for="selectVariableName">select variables</label>
+                                    <select class="custom-select mr-sm-2" id="selectVariableName">
+                                        <option selected>All</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label class="mr-sm-2" for="selectLanguage">select language</label>
+                                    <select class="custom-select mr-sm-2" id="selectLanguage">
+                                        <option selected>All</option>
+                                        <option >Kinyarwanda</option>
+                                        <option >English</option>
+                                        <option >French</option>
+                                        <option >kiswahili</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button type="button" id="getData" class="btn btn-primary">Submit</button>
+                </form>
+                <div id="outputDiv">
+                    <p>output part</p>
+<!--                    div output-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--<script src="js/jquery.min.js" type="text/javascript"></script>-->
+<script src="js/main.js" type="text/javascript"></script>
+<!--<script src="js/popper.min.js" type="text/javascript"></script>-->
+<!--<script src="js/bootstrap.min.js" type="text/javascript"></script>-->
+</body>
+</html>
